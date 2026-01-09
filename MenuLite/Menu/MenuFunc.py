@@ -2,7 +2,11 @@ import logging
 import requests
 import datetime
 import json
+import coloredlogs
 import time
+
+logging.basicConfig(level=logging.INFO)
+coloredlogs.install(level="INFO", fmt="%(asctime)s - %(funcName)s: %(message)s")
 
 # 定义__all__变量，指定可以被导出的名称
 __all__ = ['视奸编程猫论坛', '视奸用户列表里所有用户']
